@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Special Input Types Demo</title>
+  </head>
+  <body>
+    <h3><center>Customer Registration</center></h3>
+    <br /><br />
+    <center>
+      <form name="custForm" method="post">
+        <label for="uname">User Name :</label>
+        <input
+          placeholder="Enter a username"
+          type="text"
+          name=""
+          id="uname"
+          pattern="[a-zA-z]{1,15}$"
+          autofocus
+        />
+        <br /><br /><!-- focus is here when page is loaded) -->
+        <label for="pwdid">Password :</label>
+        <input
+          placeholder="Enter a password"
+          type="password"
+          name=""
+          id="pwdid"
+          pattern="[0-9]{1}+[a-zA-z]{6,10}+[0-9]{1}$"
+        /><br /><br /><!-- password should contain alphabets imposed using pattern attribute -->
+        <label for="emailid">Email :</label>
+        <input
+          placeholder="email@domain.com"
+          id="emailid"
+          type=""
+          size="30"
+          autocomplete="off"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        /><br /><br />
+        <!-- autocomplete provides auto fill feature when set to 'on' -->
+        <label for="">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+        <!-- radio buttons-->
+        <br /><br />
+        <label for="ageid">Age (Yrs) : </label>
+        <input type="number" name="" id="ageid" placeholder="e.g: 18" />
+        <br /><br />
+        <!-- required attribute : Age is necessary -->
+        Address:
+        <textarea
+          name=""
+          id=""
+          cols="20"
+          rows="4"
+          maxlength="100"
+          placeholder="Enter a street address"
+        ></textarea>
+        <br /><br />
+        <label for="webid">Company website: </label
+        ><input type="url" id="webid" required /><br /><br />
+        Choose country:
+        <select name="" id="">
+          <option value="India">India</option>
+          <option value="United States">United States</option>
+          <option value="Germany">Germany</option>
+          <option value="Japan">Japan</option>
+        </select>
+        <br /><br />
+        Date of Journey: <input type="date" name="" id="" />
+
+        <br /><br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+    </center>
+  </body>
+</html>

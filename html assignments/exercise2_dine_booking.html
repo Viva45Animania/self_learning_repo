@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dine Booking</title>
+  </head>
+  <body>
+    <h3><center>Dine Booking</center></h3>
+    <br /><br />
+    <center>
+      <form name="custForm" method="POST">
+        <label for="name"> Vistor Name : </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          pattern="[a-zA-z]{1,20}$"
+          autofocus
+          required
+        />
+        <br /><br />
+        <label for="numofppl"> Number Of Members : </label>
+        <input
+          type="number"
+          name="numofppl"
+          id="numofppl"
+          min="1"
+          max="99"
+          required
+        />
+        <br /><br />
+        <label for="mobile">Contact No: </label>
+        <input
+          type="number"
+          name="mobile"
+          id="mobile"
+          min="1000000000"
+          max="9999999999"
+          required
+        />
+        <br /><br />
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          size="30"
+          autocomplete="off"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          required
+        /><br /><br />
+        <label for="foodtype">Type of Food: </label>
+        <input
+          type="checkbox"
+          name="foodtype"
+          id="foodtype"
+          required
+          checked
+        />South Indian
+        <input type="checkbox" name="foodtype" id="foodtype" />North Indian
+        <input type="checkbox" name="foodtype" id="foodtype" />Chinese
+        <input type="checkbox" name="foodtype" id="foodtype" />Western
+        <br /><br />
+        <label for="">Room Status: </label>
+        <input type="radio" id="ac" name="ac" value="ac" required checked />
+        <label for="male">AC</label>
+        <input type="radio" id="nonac" name="non-ac" value="non-ac" />
+        <label for="nonac">non-AC</label>
+        <br /><br />
+        <label for="venue">Venue Preference: </label>
+        <select name="venue" id="venue">
+          <option value="">--SELECT--</option>
+        </select>
+
+        <br /><br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+    </center>
+  </body>
+</html>

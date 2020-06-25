@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dine Booking</title>
+  </head>
+  <body>
+    <h3><center>Dine Booking</center></h3>
+    <br /><br />
+    <center>
+      <form name="custForm" method="POST">
+        <table>
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td><label for="name"> Vistor Name : </label></td>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  pattern="[a-zA-z]{1,20}$"
+                  autofocus
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="numofppl"> Number Of Members : </label></td>
+              <td>
+                <input
+                  type="number"
+                  name="numofppl"
+                  id="numofppl"
+                  min="1"
+                  max="99"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="mobile">Contact No: </label></td>
+              <td>
+                <input
+                  type="number"
+                  name="mobile"
+                  id="mobile"
+                  min="1000000000"
+                  max="9999999999"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email: </label></td>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  size="30"
+                  autocomplete="off"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="foodtype">Type of Food: </label></td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="foodtype"
+                  id="foodtype"
+                  required
+                  checked
+                />South Indian
+                <input type="checkbox" name="foodtype" id="foodtype" />North
+                Indian
+                <input type="checkbox" name="foodtype" id="foodtype" />Chinese
+                <input type="checkbox" name="foodtype" id="foodtype" />Western
+              </td>
+            </tr>
+            <tr>
+              <td><label for="">Room Status: </label></td>
+              <td>
+                <input
+                  type="radio"
+                  id="ac"
+                  name="ac"
+                  value="ac"
+                  required
+                  checked
+                />
+                <label for="male">AC</label>
+                <input type="radio" id="nonac" name="non-ac" value="non-ac" />
+                <label for="nonac">non-AC</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="venue">Venue Preference: </label></td>
+              <td>
+                <select name="venue" id="venue">
+                  <option value="">--SELECT--</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="submit" value="Book" /></td>
+              <td><input type="reset" value="Reset" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>

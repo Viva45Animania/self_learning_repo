@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <style>
+      body {
+        background-image: url("Images/menu image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .imgSubtitle {
+        text-align: left;
+        color: yellow;
+      }
+      .imgRow img {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        box-shadow: 0 14px 28px blue;
+        transition-property: all;
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+      }
+      .imgRow img:hover {
+        width: 200px;
+        height: 150px;
+        transform: scale(1);
+      }
+      .animate {
+        width: 200px;
+        background-color: orange;
+        animation-name: myAnimation;
+        animation-duration: 10s;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
+      }
+      @keyframes myAnimation {
+        0% {
+          color: green;
+          left: 0px;
+          right: 0px;
+        }
+        50% {
+          color: red;
+          left: 200px;
+          right: 0px;
+        }
+        100% {
+          color: blue;
+          left: 0px;
+          right: 100px;
+        }
+      }
+
+      /* Write your CSS here or use external CSS*/
+    </style>
+  </head>
+  <body>
+    <!-- Apply the appropiate CSS as required-->
+
+    <h1 class="text-center">Menu Based On Your Choice</h1>
+
+    <div class="row">
+      <div class="offset-2 col-md-3 imgRow">
+        <!-- place the appropiate image here -->
+        <img src="images/veg image.jpg" alt="veg" />
+        <p class="imgSubtitle">VEGITARIAN DISHES</p>
+      </div>
+
+      <div class=" offset-3 col-md-3 imgRow">
+        <!-- place the appropiate image here -->
+        <img src="images/non-veg image.jpg" alt="veg" />
+        <p class="imgSubtitle">NON-VEGITARIAN DISHES</p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="row text-center">
+      <div class="offset-1 col-md-4 animate">
+        <!-- Apply the appropiate CSS as required-->
+
+        <h2>50% off on first 5 orders.. Hurry!!</h2>
+      </div>
+    </div>
+  </body>
+</html>

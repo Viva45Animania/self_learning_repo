@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "lex assignments",
+      "path": "."
+    },
+    {
+      "name": "css assignments",
+      "path": "/Users/JeromeRodrigues/Documents/css assignments"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "css assignments",
+    "git.ignoreLimitWarning": true
+  }
+}

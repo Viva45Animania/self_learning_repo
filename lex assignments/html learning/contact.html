@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <header>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta author="Jerome Rodrigues" />
+    <meta description="demo" />
+    <title>Contact Us</title>
+  </header>
+  <body>
+    <div id="container">
+      <p>Contact page</p>
+      <section>
+        <h2>Login form</h2>
+        <form action="">
+          <label for="unameid">Username</label>
+          <input
+            type="text"
+            name="uname"
+            id="unameid"
+            placeholder="Username"
+            autofocus
+            required
+          />
+          <br /><br />
+          <label for="upwdid">Password</label>
+          <input
+            type="password"
+            name="upwd"
+            id="upwdid"
+            placeholder="Password"
+            required
+          />
+          <br /><br />
+          <input type="submit" value="Login" />
+          <input type="reset" value="Cancel" />
+        </form>
+      </section>
+
+      <section>
+        <h2>fieldset form</h2>
+        <form action="">
+          <fieldset>
+            <legend>Personal info</legend>
+            <label for="salutation">Salutation: </label>
+            <select name="salutation" id="salutation">
+              <option value="Mr.">Mr.</option>
+              <option value="Ms.">Ms.</option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="Dr.">Dr.</option>
+            </select>
+            <br /><br />
+            <label for="uname">Name</label>
+            <input type="text" name="uname" id="uname" minlength="3" />
+            <br /><br />
+            <label for="dob">DOB: </label>
+            <input type="date" name="dob" id="dob" required />
+            <br /><br />
+            <label for="background">Background: </label>
+            <input type="radio" name="background" value="IT" />IT
+            <input type="radio" name="background" value="Others" />Others
+            <br /><br />
+            <label for="pref">Preference: </label>
+            <input type="checkbox" name="pref" value="SG" />SG
+            <input type="checkbox" name="pref" value="IN" />IN
+            <input type="checkbox" name="pref" value="AU" />AU
+          </fieldset>
+          <fieldset>
+            <legend>Contact info</legend>
+            <label for="phno">Phone No: </label>
+            <input
+              type="number"
+              name="phno"
+              id="phno"
+              min="10000000"
+              max="1000000000"
+            />
+            <br /><br />
+            <label for="emailid">Email: </label>
+            <input
+              type="email"
+              name="emailid"
+              id="emailid"
+              placeholder="email@domain.com"
+            />
+            <br /><br />
+            <label for="addressid">Address: </label>
+            <textarea
+              name="address"
+              id="addressid"
+              cols="30"
+              rows="4"
+              maxlength="100"
+            ></textarea>
+          </fieldset>
+          <input type="submit" value="Register" />
+          <input type="reset" value="Cancel" />
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

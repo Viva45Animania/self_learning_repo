@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+
+    <style>
+      .bordering {
+        background: rgb(197, 191, 232);
+        padding: 10px;
+        position: relative;
+      }
+
+      body {
+        background-image: url("Images/signup image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      body h1 {
+        color: yellow;
+      }
+      .bordering h3 {
+        color: blue;
+      }
+      .others {
+        position: absolute;
+        border: 1px solid grey;
+        border-radius: 2px;
+        padding: 1%;
+      }
+      /* Write your CSS here or use external CSS*/
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center">Welcome to Our food Zone!!</h1>
+    <form>
+      <div calss=" row ">
+        <div class="col-md-4 offset-1 bordering">
+          <!-- Apply the appropiate CSS as required-->
+
+          <h3>Register with us</h3>
+          <h5>Personal Details</h5>
+          <div class="form-group">
+            <label> Name</label>
+            <input type="email" class="form-control" placeholder="name" />
+          </div>
+          <div class="form-group">
+            <label> Email</label>
+            <input type="email" class="form-control" placeholder="Email" />
+          </div>
+          <div class="others">
+            <h5>Other Details</h5>
+            <div class="form-group">
+              <label> Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="password"
+              />
+            </div>
+            <div class="form-group">
+              <label> Confirm Password</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="password"
+              />
+            </div>
+            <div class="form-group">
+              Im not a Muggle &nbsp;<input type="checkbox" value="accepted" />
+            </div>
+          </div>
+          <br />
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

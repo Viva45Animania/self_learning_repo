@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Foodie
+    </title>
+    <style>
+      .main-container {
+        font-family: Verdana;
+        text-align: justify;
+        background-color: white;
+      }
+
+      header {
+        background-color: black;
+        color: white;
+        padding: 5px;
+      }
+      header .label {
+        font-family: Berlin Sans FB;
+        font-size: 28px;
+        color: white;
+        text-align: left;
+        height: 40px;
+        animation-name: logoEnlarge;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes logoEnlarge {
+        from {
+          font-size: 28px;
+        }
+        to {
+          font-size: 33.6px;
+        }
+      }
+      .main-container .promo {
+        position: relative;
+        animation-name: scrollPromo;
+        animation-duration: 10s;
+        animation-direction: alternate;
+        animation-iteration-count: 2;
+      }
+      @keyframes scrollPromo {
+        0% {
+          left: 0px;
+          right: 0px;
+        }
+        50% {
+          left: 200px;
+          right: 0px;
+        }
+        100% {
+          left: 0px;
+          right: 100px;
+        }
+      }
+
+      .content-area {
+      }
+      .content-area .main {
+        padding: 20px;
+      }
+      .content-area .main .article {
+        padding: 10px;
+      }
+
+      .content-area .main .food {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+      .content-area .main .food .food-card {
+        position: relative;
+        border: 1px solid black;
+        margin: 30px;
+        padding: 10px;
+        background: white;
+        color: rgb(18, 70, 128);
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+      }
+
+      .content-area .main .food .food-card:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+
+      .content-area .main .food .veg-food-card {
+        background-color: lightgreen;
+        position: relative;
+        width: 100%;
+      }
+      .content-area .main .food .non-veg-food-card {
+        background-color: orange;
+        position: relative;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-container">
+      <header>
+        <div class="label">Foodie</div>
+      </header>
+      <section class="promo">
+        Super Deal!! Order online to get discount up to 40%...
+      </section>
+      <div class="content-area">
+        <div class="main">
+          <div class="article">
+            <div>
+              <p></p>
+              <h2>Register now to order delicious food online!</h2>
+              <p>Order food online from the best restaurants near you</p>
+            </div>
+            <p>
+              Foodie is a leading food delivery chain, committed to delivering
+              quality food at your doorstep.
+            </p>
+            <p>
+              Every year they cater to the needs of thousands of foodies by
+              offering food packages for every occasion, with guaranteed
+              customer satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content-area">
+        <div class="main">
+          <h3>Choose from a wide variety of available food packages!</h3>
+          <div class="food">
+            <div class="food-card veg-food-card">
+              <strong>Veg Thali includes:</strong>
+              <ul>
+                <li>Dal fry</li>
+                <li>Mixed vegetables</li>
+
+                <li>2 Tandoori Roti and 1 Naan (Butter/Garlic)</li>
+                <li>Salad</li>
+              </ul>
+
+              <b>Rs. 120</b>
+              <b style="text-align: right"> <br /></b>
+            </div>
+            <div class="food-card non-veg-food-card">
+              <strong>Non-veg Thali includes:</strong>
+              <ul>
+                <li>Dal fry</li>
+                <li>Kadhai chicken</li>
+                <li>Butter/Garlic naan</li>
+                <li>Salad</li>
+              </ul>
+
+              <b>Rs. 170</b>
+              <b style="text-align: right"> <br /></b>
+            </div>
+            <div class="food-card non-veg-food-card">
+              <strong>Non-veg Combo:</strong>
+              <ul>
+                <li>Dal fry</li>
+                <li>Kadhai chicken</li>
+                <li>Butter/Garlic naan</li>
+                <li>Salad</li>
+                <li>Soft drink of choice</li>
+              </ul>
+
+              <b>Rs. 200</b>
+              <b style="text-align: right"> <br /></b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

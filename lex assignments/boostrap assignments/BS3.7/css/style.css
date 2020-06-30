@@ -1,0 +1,79 @@
+body {
+  background-color: #6afb92;
+}
+header {
+  padding: 20px;
+}
+.para {
+  background-color: white;
+}
+caption {
+  caption-side: top;
+}
+.table-striped > tbody > tr:nth-child(2n + 1) > td,
+.table-striped > tbody > tr:nth-child(2n + 1) > th {
+  background-color: white;
+}
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+@media only screen and (max-width: 767px) {
+  .visxs {
+    display: block;
+  }
+  .vissm {
+    display: none;
+  }
+  .vismd {
+    display: none;
+  }
+  .vislg {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .visxs {
+    display: none;
+  }
+  .vissm {
+    display: block;
+  }
+  .vismd {
+    display: none;
+  }
+  .vislg {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .visxs {
+    display: none;
+  }
+  .vissm {
+    display: none;
+  }
+  .vismd {
+    display: block;
+  }
+  .vislg {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .visxs {
+    display: none;
+  }
+  .vissm {
+    display: none;
+  }
+  .vismd {
+    display: none;
+  }
+  .vislg {
+    display: block;
+  }
+}

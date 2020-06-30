@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Layout - ButtonGroup</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<h3 class="text-center">Bootstrap Button Group</h3>
+	<div class="btn-group btn-group-lg">
+	  <button type="button" class="btn btn-default">Button 1</button>
+	  <button type="button" class="btn btn-default">Button 2</button>
+	  <button type="button" class="btn btn-default">Button 3</button>
+	</div>
+	<div class="btn-group btn-group-sm">
+	  <button type="button" class="btn btn-default">Button 4</button>
+	  <button type="button" class="btn btn-default">Button 5</button>
+	  <div class="btn-group btn-group-sm dropup">
+		<button type="button" class="btn btn-default dropdown-toggle" 
+		data-toggle="dropdown">
+		Button 6
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li><a href="#">Link 1</a></li>
+			<li><a href="#">Link 2</a></li>
+		</ul>
+	  </div>
+	</div>
+	<div class="btn-group-vertical btn-group-xs">
+	  <button type="button" class="btn btn-default">Button 7</button>
+	  <button type="button" class="btn btn-default">Button 8</button>
+	  <div class="btn-group btn-group-xs">
+		<button type="button" class="btn btn-default dropdown-toggle" 
+		data-toggle="dropdown">
+		Button 9
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li><a href="#">Link 1</a></li>
+			<li><a href="#">Link 2</a></li>
+		</ul>
+	  </div>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquerymin.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap.min.js"></script>
+  </body>
+</html>
+<!--
+.btn-group
+.btn-group-vertical
+.btn-group-size
+Nesting
+-->

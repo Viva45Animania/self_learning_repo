@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Form Controls</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<h3 class="text-center">Bootstrap Form Controls</h3>
+    <form class="form-horizontal" role="form">
+	   <div class="form-group">
+		  <label for="focusedInput" class="col-sm-2 control-label">Focused</label>
+		  <div class="col-sm-10">
+			 <input class="form-control" id="focusedInput" type="text" value="This is focused..." autofocus>
+		  </div>
+	   </div>
+	   <div class="form-group">
+		  <label for="disabledInput" class="col-sm-2 control-label">Disabled</label>
+		  <div class="col-sm-10">
+			 <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+		  </div>
+	   </div>
+	   <fieldset disabled>
+		  <div class="form-group">
+			 <label for="disabledTextInput"  class="col-sm-2 control-label">Disabled input (Fieldset disabled)</label>
+			 <div class="col-sm-10">
+				<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+			 </div>
+		  </div>
+		  <div class="form-group">
+			 <label for="disabledSelect"  class="col-sm-2 control-label">Disabled select menu (Fieldset disabled)</label>
+			 <div class="col-sm-10">
+				<select id="disabledSelect" class="form-control">
+				   <option>Disabled select</option>
+				</select>
+			 </div>
+		  </div>
+	   </fieldset>
+	   <div class="form-group has-success">
+		  <label class="col-sm-2 control-label" for="inputSuccess">Input with success</label>
+		  <div class="col-sm-10">
+			 <input type="text" class="form-control" id="inputSuccess">
+		  </div>
+	   </div>
+	   <div class="form-group has-warning">
+		  <label class="col-sm-2 control-label" for="inputWarning">Input with warning</label>
+		  <div class="col-sm-10">
+			 <input type="text" class="form-control" id="inputWarning">
+		  </div>
+	   </div>
+	   <div class="form-group has-error">
+		  <label class="col-sm-2 control-label" for="inputError">Input with error</label>
+		  <div class="col-sm-10">
+			 <input type="text" class="form-control" id="inputError">
+		  </div>
+	   </div>
+	</form>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquerymin.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap.min.js"></script>
+  </body>
+</html>

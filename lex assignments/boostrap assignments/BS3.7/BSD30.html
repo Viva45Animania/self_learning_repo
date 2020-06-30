@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Starter Page</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="container" class="container-fluid bg-success">
+		<!-- Page Header -->
+		<header class="page-header">
+			<h1>Bootstrap Components - Page Header</h1>      
+		</header>
+		<div>
+			<h3>Bootstrap Components - Navbar</h3>
+			<!-- 
+				1. change navbar-default to navbar-inverse
+				2. now add the class navbar-fixed-top to nav 
+			-->
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">WebSiteName</a>
+					</div>
+					<div>
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">iOS</a></li>
+							<li><a href="#">Android</a></li>
+							<li><a href="#">Windows</a></li>
+							<li><a href="#">Blackberry</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- Jumbotron -->
+		<section class="jumbotron">
+			<h2 class="text-center">Bootstrap Components - Jumbotron</h2>
+			<p class="text-info text-right">Bootstrap Components - Text effects</p>
+		</section>
+		<!-- Well -->
+		<section class="well">
+			<!-- Highlighting text -->
+			<p>Bootstrap Components - Well</p>
+			<p>Bootstrap Components - <mark>Mark</mark></p>
+		</section>
+		<!-- Quotes -->
+		<blockquote class="bg-info">
+			<p>Bootstrap Components - Blockquote</p>
+			<small>Bootstrap Components - Small, <cite>Bootstrap Components - Cite</cite></small>
+		</blockquote>
+		<div>
+			<h3>Bootstrap Components - Menu Lists</h3>
+			<h4 class="text-muted">Inline List</h4>
+			<ul class="list-inline">
+				<li class="active">iOS</li>
+				<li>Andrid</li>
+				<li>Windows</li>
+				<li>Blackberry</li>
+			</ul>
+			<h4 class="text-muted">Tabs</h4>
+			<ul class="nav nav-tabs nav-justified">
+				<li class="active"><a href="#">iOS</a></li>
+				<li><a href="#">Android</a></li>
+				<li><a href="#">Windows</a></li>
+				<li><a href="#">Blackberry</a></li>
+			</ul>
+			<h4 class="text-muted">Pills<h4>
+			<ul class="nav nav-pills nav-justified">
+				<li class="active"><a href="#">iOS</a></li>
+				<li><a href="#">Android</a></li>
+				<li><a href="#">Windows</a></li>
+				<li><a href="#">Blackberry</a></li>
+			</ul>
+			<h4 class="text-muted">Dynamic Tabs/Pills<h4>
+			<ul class="nav nav-tabs nav-justified">
+				<li class="active"><a href="#ios" data-toggle="tab">iOS</a></li>
+				<li><a href="#android" data-toggle="tab">Android</a></li>
+				<li><a href="#windows" data-toggle="tab">Windows</a></li>
+				<li><a href="#blackberry" data-toggle="tab">Blackberry</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="ios" class="tab-pane fade in active">
+					<h3>iOS</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div id="android" class="tab-pane fade">
+					<h3>Android</h3>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				<div id="windows" class="tab-pane fade">
+					<h3>Windows</h3>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				</div>
+				<div id="blackberry" class="tab-pane fade">
+					<h3>Blackberry</h3>
+					<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h3>Bootstrap Components - Image Effects</h3>
+			<img class="img-rounded" alt="My Image" title="Rounded" src="css/images/Picture1.jpg">
+			<img class="img-circle" alt="My Image" title="Circle" src="css/images/Picture1.jpg">
+			<img class="img-thumbnail" alt="My Image" title="Thumbnail" src="css/images/Picture1.jpg">
+			<img class="img-responsive" alt="My Image" title="Responsive" src="css/images/Picture1.jpg">
+		</div>
+		<div>
+			<h3>Bootstrap Components - Buttons</h3>
+			<button type="button" class="btn btn-default">Default</button>
+			<button type="button" class="btn btn-primary">Primary</button>
+			<button type="button" class="btn btn-success">Success</button>
+			<button type="button" class="btn btn-info">Info</button>
+			<button type="button" class="btn btn-warning">Warning</button>
+			<button type="button" class="btn btn-danger">Danger</button>
+			<button type="button" class="btn btn-link">Link</button>
+			<button type="button" class="btn btn-primary active">Active</button>
+			<button type="button" class="btn btn-primary disabled">Disabled</button>
+			<br/><br/>
+			<button type="button" class="btn btn-primary btn-xs">XSmall</button>
+			<button type="button" class="btn btn-primary btn-sm">Small</button>
+			<button type="button" class="btn btn-primary btn-md">Medium</button>
+			<button type="button" class="btn btn-primary btn-lg">Large</button>
+			<br/><br/>
+			<button type="button" class="btn btn-primary btn-block">Block</button>		
+		</div>
+		<div>
+			<h3>Bootstrap Components - Button Groups</h3>
+			<div class="btn-group">
+				<button type="button" class="btn btn-default">iOS</button>
+				<button type="button" class="btn btn-success">Android</button>
+				<div class="btn-group">
+					<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+						Windows <span class="caret"></span></button>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Surface</a></li>
+							<li><a href="#">Win8</a></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h3>Bootstrap Components - Icons & Badges</h3>
+			<p>I will <a href="mailto:nevil_paul@infosys.com"><span class="glyphicon glyphicon-envelope"></span></a> you</p>
+			<p>My thoughts are in a <span class="glyphicon glyphicon-cloud text-muted"></span></p>
+			<p>We should catch up for a <span class="glyphicon glyphicon-glass text-warning"></span> sometime</p>
+			<p>I <span class="glyphicon glyphicon-heart text-danger"></span> <span class="glyphicon glyphicon-music"></span>. Do you?</p>
+			<p>You should come by my <span class="glyphicon glyphicon-home text-primary"></span> sometime to watch a <span class="glyphicon glyphicon-film text-success"></p>
+			<p>I <span class="glyphicon glyphicon-thumbs-up text-primary"></span> it</p>
+			<button class="btn btn-primary">Downloading...<span class="glyphicon glyphicon-download"></span><span class="badge">2</span></button>
+		</div>
+		<div>
+			<h3>Bootstrap Components - List Groups</h3>
+			<ul class="list-group">
+				<li class="list-group-item">List Item</li>
+				<li class="list-group-item active">List Item- active</li>
+				<li class="list-group-item diabled">List Item- disabled</li>
+				<li class="list-group-item list-group-item-info">List Item- info</li>
+				<li class="list-group-item list-group-item-warning">List Item- warning</li>
+				<li class="list-group-item list-group-item-danger">List Item- danger</li>
+				<li class="list-group-item list-group-item-success">
+					<h4 class="list-group-item-heading">List item- Heading</h4>
+					<p class="list-group-item-text">List Item- Text</p>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Bootstrap Components - Table</h3>
+			<table class="table table-bordered table-striped">
+				<caption class="text-center">Bootstrap Table</caption>
+				<thead>
+					<tr>
+						<th>Firstname</th>
+						<th>Lastname</th>
+						<th>Email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Nevil</td>
+						<td>JP</td>
+						<td>njp@bsd.com</td>
+					</tr>
+					<tr>
+						<td>Neethu</td>
+						<td>Nevil</td>
+						<td>nn@bsd.com</td>
+					</tr>
+					<tr>
+						<td>Seira</td>
+						<td>Nevil</td>
+						<td>seira@bsd.com</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<h3>Bootstrap Components - Panel</h3>
+			<div class="panel-group">
+				<section class="panel panel-default">
+					<article class="panel-body">Panel- Default</article>
+				</section>
+				<section class="panel panel-primary">
+					<article class="panel-body">Panel- Primary</article>
+				</section>
+				<section class="panel panel-success">
+					<div class="panel-heading">Panel Heading</div>
+					<article class="panel-body">Panel- body</article>
+					<div class="panel-footer">Panel Footer</div>
+				</section>
+			</div>
+		</div>
+		<div>
+			<h3>Bootstrap Components - Dropdown</h3>
+			<div class="dropdown">
+				<button class="btn btn-info dropdown-toggle" type="button" id="mobileos" data-toggle="dropdown">Mobile OS<span class="caret"></span></button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="mobileos">
+					<li role="presentation"><a href="#" role="menuitem">Android</a></li>
+					<li role="presentation"><a href="#" role="menuitem">iOS</a></li>
+					<li role="presentation"><a href="#" role="menuitem">Windows</a></li>
+					<li class="divider" role="presentation"></li>
+					<li class="disabled" role="presentation"><a href="#" role="menuitem">Blackberry</a></li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<h3>Bootstrap Components - Dialog</h3>
+			<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog modal-sm">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Modal Header</h4>
+						</div>
+						<div class="modal-body">
+							<p>Some text in the modal.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h3>Bootstrap Components - Collapsible</h3>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">iOS</a>
+						</h4>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse in">
+						<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Android</a>
+						</h4>
+					</div>
+					<div id="collapse2" class="panel-collapse collapse">
+						<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Windows</a>
+						</h4>
+					</div>
+					<div id="collapse3" class="panel-collapse collapse">
+						<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+		<div>
+			<h3>Bootstrap Components - Pager & Pagination</h3>
+			<h4 class="text-muted">Pager with alignment classes<h4>
+			<ul class="pager">
+				<li class="previous"><a href="#">Previous</a></li>
+				<li class="next"><a href="#">Next</a></li>
+			</ul>
+			<h4 class="text-muted">Pagination with utility classes<h4>
+			<ul class="pagination pagination-sm">
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li class="disabled"><a href="#">4</a></li>
+			</ul>
+		</div>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquerymin.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap.min.js"></script>
+  </body>
+</html>

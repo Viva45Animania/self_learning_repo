@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Web Page</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="container">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+          <div class="jumbotron">
+            <header class="text-center">
+              <h1>Welcome to My Web Page</h1>
+              <p class="text-right">
+                <small>We are gonna bootstrap this page like crazy</small>
+              </p>
+            </header>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+
+      <div class="row pt-3">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+          <section>
+            <blockquote>
+              <p>
+                You gotta learn these since this is where the world is going
+              </p>
+              <footer class="blockquote-footer">
+                NJP, <cite>Infosys Ltd</cite>
+              </footer>
+            </blockquote>
+          </section>
+          <div class="pt-4">
+            <p class="text-primary">Here are the courses on offer:</p>
+          </div>
+          <div>
+            <span class="badge badge-secondary">HTML Refresher</span>
+            <span class="badge badge-primary">Advanced JS</span>
+            <span class="badge badge-info">jQuery JS</span>
+            <span class="badge badge-warning">Can JS</span>
+            <span class="badge badge-success">RWD</span>
+            <span class="badge badge-danger">BootStrap JS</span>
+          </div>
+          <br />
+          <div>
+            <p>And here's me:</p>
+            <img
+              class="img-thumbnail"
+              style="width:75px"
+              src="css/images/Picture1.jpg"
+              alt="My Image"
+            />
+            <img
+              class="img-rounded"
+              style="width:75px"
+              src="css/images/Picture1.jpg"
+              alt="My Image"
+            />
+            <img
+              class="img-circle"
+              style="width:75px"
+              src="css/images/Picture1.jpg"
+              alt="My Image"
+            />
+          </div>
+          <div>
+            <br /><br />
+            <p class="text-primary">You can request your course here:</p>
+            <form class="form-horizontal">
+              <div class="form-row ">
+                <div class="form-group col-lg-12">
+                  <label for="name" class=" col-lg-1 text-right">Name: </label>
+                  <input
+                    class="col-lg-11"
+                    type="text"
+                    id="name"
+                    value=""
+                    placeholder="Your name here"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row ">
+                <div class="form-group col-lg-12">
+                  <label for="course" class=" col-lg-1 text-right"
+                    >Course:
+                  </label>
+                  <input
+                    class="col-lg-11"
+                    type="text"
+                    id="course"
+                    value=""
+                    placeholder="Required course here"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-lg-12">
+                  <label for="email" class=" col-lg-1 text-right"
+                    >Email:
+                  </label>
+                  <input
+                    class="col-lg-11"
+                    type="email"
+                    id="email"
+                    value=""
+                    placeholder="you@domain.com"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-lg-12">
+                  <button class="btn btn-lg btn-success offset-1">
+                    Save
+                  </button>
+                  <a href="#" class="btn btn-lg btn-warning">Cancel</a>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="para mt-1 p-4">
+            <p>
+              And here, in the table below, you will find further details about
+              the courses we are offering ;)<br /><br />
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="pt-4">
+            <table class="table table-striped table-bordered table-hover pt-3">
+              <caption>
+                Course Details
+              </caption>
+              <thead>
+                <tr>
+                  <th>Course</th>
+                  <th>Duration in Days</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HTML Refresher</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Advaned JS</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>jQuery JS</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Can JS</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>RWD</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Bootstrap JS</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <dl>
+              <dt class="vislg">Visible in Large</dt>
+              <dd class="vislg">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </dd>
+              <dt class="vismd">Visible in Medium</dt>
+              <dd class="vismd">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </dd>
+              <dt class="vissm">Visible in Small</dt>
+              <dd class="vissm">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+              </dd>
+              <dt class="visxs">Visible in XS</dt>
+              <dd class="visxs">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquerymin.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<!-- 
+Steps
+	1. align the page to the center add class="bg-success" to the outermost div
+	2. add labels to the courses' span
+	3. add required btn classes to Save and Cancel. Manipulate the space taken using sm or lg
+	4. add the classes to the images
+	5. make the header a jumbotron
+	6. add <blockquote> to the section
+	7. use text align to align h1 at center and tagline to the right in italics
+	8. Now, let's align the form using form-horizontal, form-group and form-control classes
+	9. We should look at the table now
+	10.For the details list, make each one visible only in large, medium, small and xs resolutions respectively
+-->

@@ -3,14 +3,10 @@
     {
       "name": "lex assignments",
       "path": "."
-    },
-    {
-      "name": "css assignments",
-      "path": "/Users/JeromeRodrigues/Documents/css assignments"
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "css assignments",
+    "liveServer.settings.multiRootWorkspaceName": "lex assignments",
     "git.ignoreLimitWarning": true
   }
 }

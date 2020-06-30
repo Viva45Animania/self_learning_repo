@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skill Tracker</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+    </style>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="d-flex flex-column mb-3">
+            <div class="p-2">
+                <header class="border border-light rounded">
+                    <h1 class="text-center text-light">Skill Tracker</h1>  
+                    <p class="text-center text-muted"><em>A place to view skills in the team</em></p>    
+                </header>
+            </div>
+            <div class="p-4 row">
+                <aside class="p-2 col-2 border border-light rounded">
+                    <h3 class="text-light">Links</h3>
+                    <article class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">Home</a>
+                        <a href="addskill.html" class="list-group-item list-group-item-action">Add Skill</a>
+                    </article>
+                </aside>
+                <section class="p-2 col-10 border border-light rounded">
+                   <article class="table-responsive">
+                        <h3 class="text-light">Available skills for hire</h3>
+                        <table class="table table-bordered table-hover table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Skill</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="details.html">TypeScript</a></td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a href="details.html">Angular</a></td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a href="details.html">Ionic</a></td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a href="details.html">Node JS</a></td>
+                                    <td>250</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                   </article>
+                </section>
+            </div>
+            <div class="p-2">
+                <footer class="border border-light rounded fixed-bottom">
+                    <h5 class="text-center text-light">&copy; <a href="mailto:njp@infy.com">Infy</a></h5>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/jquery.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

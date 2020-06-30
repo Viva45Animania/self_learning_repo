@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Layout - Dropdown</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<h3 class="text-center">Bootstrap Dropdown</h3>
+	<div class="dropdown">
+	   <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
+		  data-toggle="dropdown">
+		  Courses
+		  <span class="caret"></span>
+	   </button>
+	   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		  <li role="presentation" class="dropdown-header">UI Modules</li>
+		  <li role="presentation" >
+			 <a role="menuitem" tabindex="-1" href="#">AUXD</a>
+		  </li>
+		  <li role="presentation">
+			 <a role="menuitem" tabindex="-1" href="#">RWD</a>
+		  </li>
+		  <li role="presentation">
+			 <a role="menuitem" tabindex="-1" href="#">HIG</a>
+		  </li>
+		  <li role="presentation" class="divider"></li>
+		  <li role="presentation" class="dropdown-header">Mobility</li>
+		  <li role="presentation">
+			 <a role="menuitem" tabindex="-1" href="#">iOS</a>
+		  </li>
+		  <li role="presentation">
+			 <a role="menuitem" tabindex="-1" href="#">Android</a>
+		  </li>
+	   </ul>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquerymin.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap.min.js"></script>
+  </body>
+</html>
+<!--
+To use dropdown, just wrap the dropdown menu within the class .dropdown.
+You can add a header to label sections of actions in any dropdown menu by using the class dropdown-header
+Align the dropdown menu to right by adding the class .pull-right to .dropdown-menu.
+-->

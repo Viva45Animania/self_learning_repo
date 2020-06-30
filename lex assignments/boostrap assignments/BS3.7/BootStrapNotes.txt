@@ -1,0 +1,261 @@
+Bootstrap 3.x
+=============
+
+What?
+-----
+Sleek, intuitive, and powerful mobile first front-end framework for faster and 
+easier web development.In modern web development, there are several components 
+which are required in almost all web projects. Bootstrap provides basic modules 
+- Grid, Typography, Tables, Forms, Buttons and Responsiveness. Since the entire 
+framework is module based, it can be customized with our own bit of CSS or even 
+go for a complete overhaul after getting started.
+
+Why?
+----
+	-Since Bootstrap 3, the framework consists of Mobile first styles throughout 
+	the entire library instead of in separate files.
+	-It is supported by all popular browsers.
+	-With just the knowledge of HTML and CSS anyone can get started with Bootstrap. 
+	Also the Bootstrap official site has a good documentation.
+	-Bootstrap's responsive CSS adjusts to Desktops,Tablets and Mobiles.
+	-Provides a clean and uniform solution for building an interface for developers.
+	-It contains beautiful and functional built-in components which are easy to 
+	customize.
+	-It also provides web based customization.
+	
+	And best of all it is an open source.
+
+Download [http://getbootstrap.com/]
+-----------------------------------
+    Download Bootstrap: Clicking this, you can download the precompiled and minified 
+	versions of Bootstrap CSS, JavaScript, and fonts. No documentation or original 
+	source code files are included.
+
+    Download Source: Clicking this, you can get the latest Bootstrap LESS and JavaScript 
+	source code directly from GitHub.
+    [If you work with Bootstrap's uncompiled source code, you need to compile the LESS 
+	files to produce usable CSS files. For compiling LESS files into CSS, Bootstrap 
+	officially supports only Recess , which is Twitter's CSS hinter based on less.js.]
+
+	[Demo:BSD1.html]
+
+Bootstrap CSS Components
+------------------------
+
+Normalize
++++++++++
+Bootstrap uses Normalize to establish cross browser consistency.
+
+Containers
+++++++++++
+Use class .container to wrap a page's content and center the content.
+
+Emphasis
+++++++++
+Bootstrap offers a few classes that can be used to provide emphasis on texts
+
+[Demo:BSD2.html]
+
+Responsive images
+++++++++++++++++++
+Bootstrap 3 allows to make the images responsive by adding a class .img-responsive 
+to the <img> tag. This class applies max-width: 100%; and height: auto; to the 
+image so that it scales nicely to the parent element.
+
+	<img src="..." class="img-responsive" alt="Responsive image">
+	
+List
+++++
+Bootstrap supports ordered lists, unordered lists, and definition lists
+
+[Demo:BSD3.html]
+
+Tables
+++++++
+Bootstrap provides a clean layout for building tables using .table class
+
+[Demo:BSD4.html]
+
+By wrapping any .table in .table-responsive class, you will make the table scroll 
+horizontally up to small devices
+
+[Demo:BSD5.html]
+
+Grid
+++++
+	Bootstrap includes a responsive, mobile first fluid grid system that 
+	appropriately scales up to 12 columns as the device or viewport size increases. 
+	It includes predefined classes for easy layout options, as well as powerful 
+	mixins for generating more semantic layouts
+	
+	Mobile First Strategy
+	~~~~~~~~~~~~~~~~~~~~~
+    Content-Determine what is most important.
+
+    Layout-Design to smaller widths first.Base CSS address mobile device first;media 
+	queries address for tablet,desktops.
+
+    Progressive Enhancement-Add elements as screen size increases.
+	
+	[Demo:BSD6.html]
+
+	How Bootstrap grid works
+	~~~~~~~~~~~~~~~~~~~~~~~~~
+    *Rows must be placed within a .container class for proper alignment and padding.
+    *Use rows to create horizontal groups of columns.
+    *Content should be placed within columns, and only columns may be immediate children of rows.
+    *Predefined grid classes like .row and .col-xs-4 are available for quickly making grid layouts.
+    *Columns create gutters (gaps between column content) via padding. That padding is offset in 
+	rows for the first and last column via negative margin on .rows.
+    *Grid columns are created by specifying the number of twelve available columns you wish to span.
+	
+	[Demo:BSD7-9.html]
+
+	Nesting columns
+	~~~~~~~~~~~~~~~
+	To nest your content with the default grid, add a new .row and set of .col-md-* columns within 
+	an existing .col-md-* column. Nested rows should include a set of columns that add up to 12.
+	
+	[Demo:BSD10.html]
+	
+	Column Reordering
+	~~~~~~~~~~~~~~~~~
+	Columns can be reordered using using .col-md-push-* and .col-md-pull-* classes.
+
+	[Demo:BSD11.html]
+	
+
+Form Layout
++++++++++++
+Bootstrap provides you with following types of form layouts:
+    
+	Vertical
+	~~~~~~~~
+	    Add a role="form" to the parent <form> element.
+		Wrap labels and controls in a <div> with class .form-group. This is needed for optimum spacing.
+		Add a class of .form-control to all textual <input>, <textarea>, and <select> elements.
+	
+	Inline form
+	~~~~~~~~~~~
+		Add the class .form-inline to the <form> tag
+		
+	[Demo:BSD12.html]
+	
+	Horizontal form
+	~~~~~~~~~~~~~~~
+		Add a class of .form-horizontal to the parent <form> element.
+		Wrap labels and controls in a <div> with class .form-group.
+		Add a class of .control-label to the labels.
+
+	[Demo:BSD13.html]
+	
+	Form Controls
+	~~~~~~~~~~~~~
+	[Demo:BSD14.html]
+
+Button
+++++++
+	Anything that is given a class of .btn will inherit the default look of a gray button 
+	with rounded corners.
+	
+	[Demo:BSD15.html]
+	
+Images
+++++++
+	.img-rounded: adds border-radius:6px to give the image rounded corners
+	.img-circle: makes the entire image round by adding border-radius:500px
+	.img-thumbnail: adds a bit of padding and a gray border
+	
+	[Demo:BSD16.html]
+	
+Helper Classes
+++++++++++++++
+	[Demo:BSD17.html]
+	
+Responsive Utilities
+++++++++++++++++++++
+	[Demo:BSD18.html]
+
+Bootstrap Layout Components
+---------------------------
+
+Glyphicons
+++++++++++
+	[Demo:BSD19.html]
+
+Dropdown
+++++++++
+	[Demo:BSD20.html]
+	
+ButtonGroup
++++++++++++
+	Button groups allow multiple buttons to be stacked together on a single line.
+	
+	[Demo:BSD21.html]
+	
+Tabs&Pills
++++++++++++
+	Tab
+	~~~
+		Start with a basic unordered list with the base class of .nav
+		Add class .nav-tabs.
+	
+	[Demo:BSD22.html]
+	
+	Pills
+	~~~~~
+		Same as above, use the class .nav-pills instead of .nav-tabs.
+		You can stack the pills vertically using the class .nav-stacked alongwith classes 
+		.nav, .nav-pills.
+	
+	[Demo:BSD23.html]
+
+Page Header
++++++++++++
+	To use a page header, wrap your heading in a <div> with a class of .page-header
+		
+Jumbotron
++++++++++
+	this component can optionally increases the size of headings and add a lot of margin 
+	for landing page content. To use the Jumbotron, simply create a container <div> with 
+	the class of .jumbotron.
+
+	[Demo:BSD24.html]
+	
+Panel
++++++
+	Panel component are used when you want to put your DOM component in a box. To get a 
+	basic panel, just add class .panel to the <div> element. Then add class .panel-default 
+	to this element 
+
+	[Demo:BSD25.html]
+	
+Progressbar
++++++++++++
+	To create a basic progress bar:
+		Add a <div> with a class of .progress.
+		Next, inside the above <div>, add an empty <div> with a class of .progress-bar.
+		Add a style attribute with the width expressed as a percentage. 
+
+	[Demo:BSD26.html]
+
+Carousal
+++++++++
+	Via JavaScript: The carousel can be manually called with JavaScript as below:
+	$('.carousel').carousel()
+	
+	Or using classes and attributes
+		-Attribute data-slide (carousal control) accepts the keywords prev or next, which 
+		alters the slide position relative to its current position.
+		-Use data-slide-to (carousal indicator) to pass a raw slide index to the carousel 
+		data-slide-to="2", which shifts the slide position to a particular index beginning 
+		with 0.
+		-The data-ride="carousel" attribute is used to mark a carousel as animating starting 
+		at page load.
+
+	Option		Type/Default	Value				Data attribute name	
+	interval	number      	Default: 5000		data-interval	
+	pause		string			Default: "hover"	data-pause
+	wrap		boolean			Default: true		data-wrap
+	
+	[Demo:BSD27.html]

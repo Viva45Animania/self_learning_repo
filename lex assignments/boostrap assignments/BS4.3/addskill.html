@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skill Tracker</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+    </style>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="d-flex flex-column mb-3">
+            <div class="p-2">
+                <header class="border border-light rounded">
+                    <h1 class="text-center text-light">Skill Tracker</h1> 
+                    <p class="text-center text-muted"><em>A place to add new skills to the team</em></p>   
+                </header>
+            </div>
+            <div class="p-4 row">
+                <aside class="p-2 col-2 border border-light rounded">
+                    <h3 class="text-light">Links</h3>
+                    <article class="list-group">
+                        <a href="home.html" class="list-group-item list-group-item-action">Home</a>
+                        <a href="#" class="list-group-item list-group-item-action active">Add Skill</a>
+                    </article>
+                </aside>
+                <section class="p-2 col-10 border border-light rounded">
+                    <h3 class="text-light">Add new skill</h3>
+                    <form>
+                        <div class="form-group row">
+                            <label for="id" class="col-sm-2 col-form-label text-light">Skill ID:</label>
+                            <div class="col-sm-10">
+                                <input type="number" value="5" class="form-control is-valid" id="id" placeholder="Skill ID">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-2 col-form-label text-light">Skill Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" value="RJS" class="form-control is-invalid" id="name" placeholder="Skill Name">
+                                <div class="invalid-feedback">
+                                    Skill name should have at least 4 characters
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="price" class="col-sm-2 col-form-label text-light">Skill Price</label>
+                            <div class="col-sm-10">
+                                <input type="number" value="0" class="form-control is-invalid" id="price" placeholder="Skill Price">
+                                <div class="invalid-feedback">
+                                    Price has to be > $0
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10 offset-2">
+                                <button type="submit" class="btn btn-sm btn-primary">Add</button>
+                                <button type="reset" class="btn btn-sm btn-link">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="p-2">
+                <footer class="border border-light rounded fixed-bottom">
+                    <h5 class="text-center text-light">&copy; <a href="mailto:njp@infy.com">Infy</a></h5>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/jquery.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

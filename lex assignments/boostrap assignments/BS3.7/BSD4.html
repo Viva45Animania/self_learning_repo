@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Table I</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<h3 class="text-center">Bootstrap Table I</h3>
+    <table class="table table-bordered table-hover">
+		<caption>Product Details</caption>
+		<thead>
+			<tr>
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Product1</td>
+				<td>5</td>
+				<td class="success">Delivered</td>
+			</tr>
+			<tr>
+				<td>Product2</td>
+				<td>2</td>
+				<td class="active">Pending</td>
+			</tr>
+			<tr>
+				<td>Product3</td>
+				<td>3</td>
+				<td class="danger">Declined</td>
+			</tr>
+			<tr>
+				<td>Product4</td>
+				<td>1</td>
+				<td class="warning">Delayed</td>
+			</tr>
+		</tbody>
+	</table>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquerymin.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap.min.js"></script>
+  </body>
+</html>
+<!--
+By adding the .table-condensed class, row padding is cut in half to condense the table
+-->

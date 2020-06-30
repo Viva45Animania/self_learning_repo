@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Grid Reordering</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+		<h3 class="text-center">Bootstrap Grid Reordering</h3>
+		<div class="row">
+		  <p>Before Ordering</p>
+		  <div class="col-md-4" style="border:1px solid #000">
+			 I am on left
+		  </div>
+		  <div class="col-md-8" style="border:1px solid #000">
+			 I am on right
+		  </div>
+	    </div><br>
+	    <div class="row">
+		  <p>After Ordering</p>
+		  <div class="col-md-4 col-md-push-8" style="border:1px solid #000">
+			 I was on left
+		  </div>
+		  <div class="col-md-8 col-md-pull-4" style="border:1px solid #000">
+			 I was on right
+		  </div>
+	    </div>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquerymin.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap.min.js"></script>
+  </body>
+</html>
